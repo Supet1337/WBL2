@@ -1,5 +1,9 @@
 package main
 
+import (
+	"dev03/internal"
+)
+
 /*
 === Утилита sort ===
 
@@ -26,5 +30,11 @@ package main
 */
 
 func main() {
-
+	file := internal.NewTextFile()
+	file.ParseFlags()
+	file.SetInputPath()
+	file.SetOutputPath()
+	file.Read()
+	internal.RunSort(file)
+	file.Write()
 }

@@ -1,5 +1,7 @@
 package main
 
+import "dev01/gontp"
+
 /*
 === Базовая задача ===
 
@@ -13,5 +15,5 @@ package main
 */
 
 func main() {
-
+	gontp.Run()
 }
